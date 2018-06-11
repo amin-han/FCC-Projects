@@ -1,4 +1,4 @@
 # Local Weather
 displays local weather in either F° or C° using Weather Underground api.  View [here](https://codepen.io/hanamin/pen/ZBoQpZ).
 
-![weather](https://raw.githubusercontent.com/hanamin/pixel-aesthetics/master/weatherbox%20-pixel/images/screenshot.PNG)
+![weather](https://raw.githubusercontent.com/hanamin/FCC-Projects/master/Take%20Home%20Projects/Local%20Weather/images/screenshot.PNG)
