@@ -9,10 +9,10 @@ uSay = sSays = []; //your moves/simon moves
 $("#strict").click(function() {
   if (str === 1) {
     str = 0;
-    $("#strict").html("Mode: Casual");
+    $("#strict").html("MODE:CASUAL");
   } else {
     str = 1;
-    $("#strict").html("Mode: Strict");
+    $("#strict").html("MODE:STRICT");
   }
 });
 
