@@ -1,0 +1,53 @@
+/*header*/
+h3 {
+  text-align:center;
+  font-family:"Press Start 2P";
+  padding-top:20px;
+}
+
+/*weatherbox*/
+.container{
+  text-align:center;
+  font-family:"Press Start 2P";
+   height:350px;
+  width:500px;
+  top:30px;
+  color:white;
+  border-radius:5px;
+  background-color:#87AFBC;
+  box-shadow:0px 1px 2px black;
+}
+
+/*rainbow text*/
+.rainbow {
+  background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+/*styling the temp*/
+.forecast{
+  font-size:25px;
+  color:gold;
+  padding-bottom:10px;
+}
+
+.temp {
+  font-size:25px;
+  color:gold;
+}
+
+.desc {
+  font-size:12px;
+}
+
+
+/*everything else*/
+body {
+ background-color:#ffffe0;
+ background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-position:center bottom;
+   background-image:url("images/pikachu.gif");
+}
