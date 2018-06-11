@@ -1,0 +1,102 @@
+.logo{
+  float:right;
+}
+
+.board{
+  margin:0 auto;
+  height:80%;
+  width:500px;
+}
+
+.circle{
+  border:10px solid white;
+  outline:none;
+  position: relative;
+  border-radius: 50%;
+}
+
+.circle:hover{
+  cursor:pointer;
+}
+
+.circle:active{
+  filter:brightness(400%);
+}
+
+.modes{
+  color:white;
+  outline:none;
+  height:30px;
+  font-size:15px;
+  border-radius:10px;
+  font-family:"Press Start 2P";
+
+}
+
+#score{
+  color:white;
+  margin:0 auto;
+  width:150px;
+  height:150px;
+  text-align:center;
+  font-size:25px;
+  font-family:"Press Start 2P";
+}
+
+#start{
+  background:green;
+  border-color:green;
+  margin-bottom:5px;
+}
+
+#strict{
+  float:right;
+  background:red;
+  border-color:red;
+  margin-bottom:10px;
+}
+
+#red{
+  background:#8a1c0f;
+  width: 180px;
+  height: 180px;
+}
+
+#blue{
+  top:-25px;
+  float:right;
+  background:#2e66c1;
+  width:100px;
+  height:100px;
+}
+
+#green{
+  top:-75px;
+  background:#00802b;
+  width:220px;
+  height:220px;
+}
+
+#yellow{
+  top:-50px;
+  left:-50px;
+  float:right;
+  background:#b3b300;
+  width:150px;
+  height:150px;
+}
+
+button:active{
+   transform: translate(0px, 3px);
+}
+
+.active{
+  filter:brightness(400%);
+}
+
+body{
+  background-image:url('images/bg.jpg');
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+
