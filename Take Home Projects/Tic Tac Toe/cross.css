@@ -1,0 +1,180 @@
+body {
+  font-family: "Press Start 2P";
+  background:url('images/background.png');
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+
+
+h1 {
+  font-size: 20px;
+  margin-bottom: 0px;
+   -webkit-animation: rainbow 1s infinite; 
+  -ms-animation: rainbow 1s infinite;
+  animation: rainbow 1s infinite; 
+}
+
+/*cross-browser rainbow effect*/
+@-webkit-keyframes rainbow{
+	20%{color: red;}
+	40%{color: yellow;}
+	60%{color: green;}
+	80%{color: blue;}
+	100%{color: orange;}	
+}
+
+@-ms-keyframes rainbow{
+	20%{color: red;}
+	40%{color: yellow;}
+	60%{color: green;}
+	80%{color: blue;}
+	100%{color: orange;}	
+}
+
+@keyframes rainbow{
+	20%{color: red;}
+	40%{color: yellow;}
+	60%{color: green;}
+	80%{color: blue;}
+	100%{color: orange;}	
+}
+
+hr {
+  border: 1px solid red;
+}
+
+button {
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding: 10px;
+  color: lightgrey;
+  background: #1D1F20;
+  outline: none;
+}
+
+button:hover {
+  border: 1px solid lightgrey;
+  color: #1D1F20;
+  background: lightgrey;
+}
+
+.container {
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  width: 400px;
+}
+.score-div {
+  margin-top: 50px;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  background:url("images/bg.gif");
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+.score-div div {
+  display: inline-block;
+  padding: 0px 20px;
+}
+.score-div > p {
+  color: green;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  font-size: 14px;
+}
+.board {
+  cursor: pointer;
+  margin: 30px auto;
+  width: 310px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.board div {
+  width: 100px;
+  height: 100px;
+  border: 1px solid lightgrey;
+  display: block;
+  
+}
+
+.board div p {
+  margin-top: 37px;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+#player-start {
+  font-family: "Press Start 2P";
+  font-size:10px;
+  float: left;
+}
+
+#computer-start {
+  font-family: "Press Start 2P";
+  font-size:10px;
+  float: right;
+}
+
+.win-lines {
+  clear: both;
+  width: 100%;
+  
+}
+.line {
+  display: none;
+  left: 58px;
+  margin-top:50px;
+  position: absolute;
+  width: 70%;
+}
+.diag {
+  display: none;
+  position: absolute;
+  width: 100%;
+  margin-top:50px;
+}
+.col {
+  display: none;
+  position: absolute;
+  width: 70%;
+  top: 350px;
+  transform: rotate(90deg);
+}
+#line-1 {
+  top: 198px;
+}
+#line-2 {
+  top: 300px;
+}
+#line-3 {
+  top: 402px;
+}
+#col-1 {
+  left: -44px;
+}
+
+#col-2 {
+  left: 59px;
+}
+
+#col-3 {
+  left: 161px;
+}
+#diag-1 {
+  transform: rotate(45deg);
+  top: 301px;
+}
+#diag-2 {
+  transform: rotate(135deg);
+  top: 299px;
+}
+.x-color {
+  color: lightblue;
+}
+.o-color {
+  color: orange;
+}
