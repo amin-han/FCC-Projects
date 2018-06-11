@@ -2,7 +2,7 @@
 var forismaticAPI = 'https://api.forismatic.com/api/1.0/?method=getQuote&format=jsonp&lang=en&jsonp=?';
 $(document).ready(function() {
   
-    $('#quotearea').on("click", function() {
+    $('#getquote').on("click", function() {
         $.getJSON(forismaticAPI, function(data) {
             $('#quotearea').empty();
             $('#quotearea').append('<blockquote>' + data.quoteText + '</blockquote>' + '<p id="author"> —  ' + data.quoteAuthor + '</p>');
@@ -24,3 +24,11 @@ $(document).ready(function() {
  $('.twitter-share-button').on('click', function(){
         twitter();
     });
+
+//random color
+var myColors = ['red', 'purple', '#E84751', 'blue', 'orange', '#323643'];
+                
+function colorShift(){
+  var randomize = Math.floor(Math.random()*myColors.length);
+  $('body').css("background-color", myColors[randomize]);
+}
