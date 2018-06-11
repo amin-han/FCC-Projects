@@ -1,0 +1,85 @@
+/*placeholder text for various browsers*/
+
+::-webkit-input-placeholder {color: white;}
+::-moz-placeholder {color: white;}
+:-ms-input-placeholder {color: white;}
+:-moz-placeholder {color: white;}
+
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; } 
+input:focus::-moz-placeholder { color:transparent; }
+input:focus:-ms-input-placeholder { color:transparent; } 
+
+/*input box*/
+
+input{
+  width:90%;
+  height:40px;
+  border:none;
+  background:none;
+}
+
+#submit{
+  width:43px; 
+  height:43px; 
+  float:right; 
+  margin:-42px 5px 0 0;
+}
+
+#query{
+  font-family: 'Press Start 2P', cursive;
+  font-size:16px;
+  color:white;
+  padding: 13px 0 0 10px;
+  margin:20px 0 0 10px;
+  float:left;
+}
+
+.random{
+  float:left;
+  text-align:center;
+  padding:5px 0 0 25px;
+  margin:20px 0 0 5px;
+}
+
+#surprise{
+ float:left;
+ display:none;
+ margin:60px 0 -100px -100px;
+}
+
+
+/*bubble styling*/
+
+.bubble 
+{
+position: relative;
+width: 470px;
+height: 70px;
+padding: 0px;
+background: #87AFBC;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+border: #D35435 solid 3px;
+}
+
+
+/*everything else*/
+
+.pika{
+float:left;
+}
+
+h3{
+  color:red;
+}
+
+.col-xs-12{
+  font-size:12px;
+  font-family:'Press Start 2P';
+}
+
+body {
+    background-color:#ffffe0;
+}
