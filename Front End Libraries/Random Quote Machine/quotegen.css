@@ -1,0 +1,32 @@
+/*quote box*/
+
+#quotearea {
+  color:white;
+  width:20%;
+  padding: 8px;
+  margin:0 auto;
+  background:rgba(0,0,0,0.13);
+  text-align: center;
+  font-family: "Saira";
+  border-radius:7px;
+}
+
+.btn-primary{
+  display:block;
+  height:35px;
+  width:80px;
+  border-radius:10px;
+  font-family:'Saira';
+  text-align:center;
+  margin:10px auto;
+}
+
+
+/*everything else*/
+
+body {
+  margin-top:20%;
+  background-image:url('https://image.ibb.co/gPkRcQ/quotebg.jpg');
+  background-repeat:no-repeat;
+  background-position:center;
+}
