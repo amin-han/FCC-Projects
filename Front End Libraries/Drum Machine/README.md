@@ -1,1 +1,3 @@
 # Drum Machine
+
+More info coming soon...
