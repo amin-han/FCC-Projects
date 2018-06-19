@@ -1,1 +1,4 @@
 
+# Palindrome Checker
+
+Info forthcoming
