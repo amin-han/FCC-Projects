@@ -1,4 +1,4 @@
 
 # Personal Portfolio Page
 
-More info to come
+Portfolio template for displaying your work proudly.  Functional demo can be found here.
