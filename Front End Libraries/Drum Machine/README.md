@@ -1,3 +1,3 @@
 # Drum Machine
 
-More info coming soon...
+Become a real (front-end) musician!  Demo here.
