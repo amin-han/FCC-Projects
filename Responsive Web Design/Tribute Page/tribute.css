@@ -1,26 +1,35 @@
-
 #main {
+  width:45%;
   color:white;
+  margin:auto;
   text-align:center;
+  line-height:1.5;
   font-family:"Press Start 2P", "Consolas";
 }
 
-#img-div {
-  margin:0 0 15px 0;
+#image {
+  margin:auto;
+  display:block;
+  max-width:100%;
 }
 
 #img-caption {
   font-size:20px;
+  margin:15px 0 0 0;
 }
 
 #tribute-info {
-  
+  font-size:15px;
+  font-style:italic;
 }
 
 /*everything else*/
 
+a {
+  text-decoration:none;
+}
+
 body {
-  background:black url("https://image.ibb.co/hbZW98/curtain.jpg") no-repeat;
+  background:black url("images/bg.png") no-repeat; 
   background-size:cover;
-  
 }
