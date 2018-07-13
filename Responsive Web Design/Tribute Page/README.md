@@ -1,6 +1,10 @@
 # Tribute Page
 
-Dedicated to the late Satoru Iwata.  You can view the page here.
+Dedicated to the late Satoru Iwata.  You can view the page [here](https://codepen.io/minobino/pen/OwyEqv).
 
-https://raw.githubusercontent.com/minobino/FCC-Projects/master/Responsive%20Web%20Design/Tribute%20Page/images/screenshot.PNG
+![tribute](https://raw.githubusercontent.com/minobino/FCC-Projects/master/Responsive%20Web%20Design/Tribute%20Page/images/screenshot.PNG)
+
+
+
+
 
