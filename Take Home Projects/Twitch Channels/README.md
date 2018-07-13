@@ -1,5 +1,5 @@
 # Twitch Channels
-Making use of the Twitch API to track the status of streamers.  Check it out [here](https://codepen.io/hanamin/pen/qRrWzd).
+Making use of the Twitch API to track the status of streamers.  Check it out [here](https://codepen.io/minobino/pen/qRrWzd).
 
 To view the users of your choosing, just change the contents of the usersList array at the top of the js file.
 
