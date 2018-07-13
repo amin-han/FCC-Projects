@@ -1,3 +1,4 @@
 # Tribute Page
 
-I'll update this soon
+Dedicated to the late Satoru Iwata.  You can view the page here.
+
