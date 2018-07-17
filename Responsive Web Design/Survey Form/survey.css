@@ -1,1 +1,44 @@
 
+#main {
+  max-width:70%;
+  min-width:800px;
+  margin:auto;
+  color:white;
+  text-align:center;
+  line-height:1.5;
+  font-family:"Press Start 2P", "Consolas";
+}
+
+input {
+  border:3px solid black;
+  border-radius:5px;
+}
+
+select {
+  border:3px solid black;
+  border-radius:5px;
+}
+
+select:invalid { 
+  color: gray; 
+}
+
+textarea {
+  border:2px black;
+  border-radius:5px;
+  resize:none;
+  width:700px;
+  height:100px;
+  padding:3px 0 0 3px;
+}
+
+#submit {
+  padding:4px;
+  font-family:"Press Start 2P", "Consolas";
+}
+
+body {
+  background:url("images/bg.png") black no-repeat;
+  background-size:cover;
+}
+
