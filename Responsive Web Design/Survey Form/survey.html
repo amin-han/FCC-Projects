@@ -1,1 +1,47 @@
 
+<div id="main">
+  <h1 id="title">Pixel Perfect Survey</h1>
+  <p id="description">determining the place of 8-bit aesthetic </p>
+  
+  <form id="survey-form">
+    <label id="name-label" for="name">Name</label><br/>
+   <input type="text" id="name" placeholder=" name"  required><br/>
+    <label id="email-label" for="email">Email</label><br/>
+    <input type="email" id="email" placeholder=" email address"  required><br/>
+    <label id="number-label" for="number">Age</label><br/>
+    <input type="number" id="number" placeholder=" age" min="10" max="120"  required><br/>
+    
+    <label id="dropdown-label" for"dropdown">Gamer Type</label><br/>
+    <select id="dropdown" required>
+      <option value="" disabled selected hidden>What kind of gamer are you?</option>
+      <option value="casual">Casual</option>
+      <option value="avid">Avid</option>
+      <option value="hardcore">Hardcore</option>
+    </select><br/><br/>
+    
+    <label id="checkbox-label">Which of these retro platforms have you owned?</label><br/>
+    
+    <input type="checkbox" name="console" value="nes">NES</input>
+    <input type="checkbox" name="console" value="snes">SNES</input>
+    <input type="checkbox" name="console" value="gb">GAMEBOY</input>
+    <input type="checkbox" name="console" value="gba">GBA</input>
+    <input type="checkbox" name="console" value="genesis">GENESIS</input>
+    <input type="checkbox" name="console" value="gg">GAME GEAR</input>
+<br/><br/>
+--------------------------------------------------<br/>
+
+<label id="radio-label">Do you think that games require realistic gfx?</label><br/><br/>
+<input type="radio" name="gfx" value="1">Absolutely</input>
+<input type="radio" name="gfx" value="2">Sometimes</input>
+<input type="radio" name="gfx" value="3">Nope</input>
+<input type="radio" name="gfx" value="4">Pixels forever!</input><br/><br/>
+--------------------------------------------------<br/>
+<label id="txtarea-label">How important is the pixel aesthetic to you?</label><br/><br/>
+<textarea></textarea><br/>
+<input type="submit" id="submit" value="SUBMIT"></input>
+
+
+
+  </form>
+</div>
+
