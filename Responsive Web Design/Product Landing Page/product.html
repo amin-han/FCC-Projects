@@ -1,16 +1,36 @@
 
-
-  <div id="main" class="animated zoomIn">
+  <main id="main" class="animated zoomIn">
     <header id="header">
-      <nav id="nav-bar"> 
-        <a href="" class="nav-link">Latest Mod</a>
-        <a href="" class="nav-link">Products</a>
-        <a href="" class="nav-link">Feedback</a>
+          <img id="header-img" src="images/logo.gif" />
+      <nav id="nav-bar">
+        <ul>
+          <li> <a href="#video" class="nav-link">Featured Mod</a></li>
+          <li><a href="#products" class="nav-link">Products</a></li>
+          <li> <a href="#form" class="nav-link">Newsletter Signup</a></li>
+        </ul>
       </nav>
-    <img id="header-img" src="images/logo.gif" />
-      
     </header>
-
-    <iframe src="https://www.youtube.com/embed/9vSxneikLEg?controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
     
-  </div>
+<h3>Featured Mod</h3>
+    <iframe id="video" src="https://www.youtube.com/embed/9vSxneikLEg?controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
+    
+    <section id="products">
+      <h3>Products</h3>
+      <img src="images/gb.png"/ alt="gameboy">
+      <img src="images/gbc.png" alt="gameboy color"/>
+      <img src="images/gba.png"/ alt="gameboy advance">
+      <img src="images/gbasp.png" alt="gameboy advance sp"/>
+      <img src="images/nds.png" alt="nintendo ds"/>
+      <br/>
+      <img src="images/peripherals.png" alt="peripherals"/>
+    </section>
+    
+    <h3>Newsletter Signup</h3>
+    <form id="form" action="https://www.freecodecamp.com/email-submit" target="_blank">
+      <input type="email" id="email" name="email" placeholder=" email address"  required>
+      <input type="submit" id="submit" value="submit"></input>
+    </form>
+    
+    <img id="console-gif" src="images/giphy.gif" alt="looping gif of game consoles available"/>
+    
+  </main>
