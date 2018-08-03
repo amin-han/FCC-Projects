@@ -1,1 +1,10 @@
 
+header {
+  display:flex;
+}
+
+body {
+  color:white;
+  background:#666699;
+  font-family:"Calibri";
+}
