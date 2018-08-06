@@ -1,1 +1,73 @@
 
+main {
+  margin:auto;
+  text-align:center;
+  width:70%;
+  color:white;
+  font-family:"Press Start 2P";
+}
+
+#navbar {
+  top:0;
+  position:fixed;
+  background:rgb(0, 122, 204,0.7);
+  border-radius:5px;
+  padding:10px;
+}
+
+#spacer {
+  width: 75%;
+  height: 55px;
+}
+
+#profile-pic {
+  border:7px solid white;
+  border-radius:50%;
+}
+
+#welcome-section {
+  height:100%;
+}
+
+a, a:visited {
+  color:white;
+  font-size:25px;
+  text-decoration:none;
+}
+
+a:hover {
+  color:white;
+  -webkit-animation: rainbow 1s infinite; 
+  -ms-animation: rainbow 1s infinite;
+  animation: rainbow 1s infinite; 
+}
+
+/*cross-browser rainbow effect*/
+@-webkit-keyframes rainbow{
+	20%{color: red;}
+	40%{color: yellow;}
+	60%{color: green;}
+	80%{color: blue;}
+	100%{color: orange;}	
+}
+
+@-ms-keyframes rainbow{
+	20%{color: red;}
+	40%{color: yellow;}
+	60%{color: green;}
+	80%{color: blue;}
+	100%{color: orange;}	
+}
+
+@keyframes rainbow{
+	20%{color: red;}
+	40%{color: yellow;}
+	60%{color: green;}
+	80%{color: blue;}
+	100%{color: orange;}	
+}
+
+
+body {
+    background:#0099ff;
+}
