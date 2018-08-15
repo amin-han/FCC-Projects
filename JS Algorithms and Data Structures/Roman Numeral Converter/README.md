@@ -1,3 +1,3 @@
 # Roman Numeral Converter
 
-Info coming soon...
+FCC challenge, see file for solution
