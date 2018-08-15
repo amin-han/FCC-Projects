@@ -1,3 +1,3 @@
 # Telephone Number Validator
 
-More info soon...
+FCC challenge, see file for solution
