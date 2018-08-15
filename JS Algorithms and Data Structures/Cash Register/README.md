@@ -1,4 +1,4 @@
 
 # Cash Register
 
-More info coming soon...
+FCC challenge, see file for solution
