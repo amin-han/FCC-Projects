@@ -1,4 +1,4 @@
 
 # Palindrome Checker
 
-Info forthcoming
+FCC challenge, see file for solution
