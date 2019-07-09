@@ -1,1 +1,144 @@
 
+body {
+  background:#000;
+}
+
+/*drum machine*/
+
+.display-container {
+    z-index:0;
+    width:500px;
+    height:500px;
+    background:url("https://i.ibb.co/YX663TD/pixel.png");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:200px auto;
+}
+
+#display-pads {
+    display: grid;
+    grid-template-columns: repeat(3,minmax(20px,100px));
+    grid-template-rows: 60px 60px 60px;
+    grid-gap: 45px;
+    margin-top:100px;
+}
+
+.drum-pad {
+    cursor: pointer;
+    background-color: #333333;
+    color : #fff ;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.1), 0 2px 3px rgba(0,0,0,.2);
+    border-radius: 4px;
+    font-size: 30px;
+    font-family:'Press Start 2P', 'Candara';
+}
+.drum-pad:hover{
+    background-color: #404040;
+}
+.drum-pad:active{
+    transform: translate(0px, 3px);
+    color: #16a7d6;
+}
+
+.sound-name {
+    text-align: center;
+    position: relative;
+    color:#fff;
+    font:40px 'Press Start 2P', 'Candara';
+    text-shadow:
+		-3px -3px 0 #16a7d6,
+		3px -3px 0 #16a7d6,
+		-3px 3px 0 #16a7d6,
+		3px 3px 0 #16a7d6;
+}
+
+
+/*equalizer effects*/
+
+.crazy-bars{
+  z-index:-1;
+  position: fixed;
+  background:#000;
+  width:10%;
+  bottom:0;
+  height:100%;
+  margin:0 auto;
+  padding:0px;
+  animation-name: equalizer;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes equalizer {
+  0% { height: 33%;background-color:#b0eea8; }
+  5% { height: 15%; }
+  10% { height: 78%; }
+  15% { height: 100%; }
+  20% { height: 12%; }
+  25% { height: 35%; }
+  30% { height: 5%; }
+  35% { height: 100%; }
+  40% { height: 33%; }
+  45% { height: 48%; }
+  50% { height: 15%; }
+  55% { height: 78%; }
+  60% { height: 100%; }
+  65% { height: 12%; }
+  70% { height: 35%; }
+  75% { height: 5%; }
+  80% { height: 100%; }
+  85% { height: 33%; }
+  90% { height: 48%; }
+  100% { height: 78%; }
+}
+
+.bar1 {
+  left: 0;
+  animation-duration: 4s;
+}
+
+.bar2 {
+  left: 10%;
+  animation-duration: 5.1s;
+}
+
+.bar3 {
+  left: 20%;
+  animation-duration: 3.2s;
+}
+
+.bar4 {
+  left: 30%;
+  animation-duration: 4s;
+}
+
+.bar5 {
+  left: 40%;
+  animation-duration: 6.2s;
+}
+
+.bar6 {
+  left: 50%;
+  animation-duration: 5s;
+}
+
+.bar7 {
+  left: 60%;
+  animation-duration: 3s;
+}
+
+.bar8 {
+  left: 70%;
+  animation-duration: 2s;
+}
+.bar9 {
+  left: 80%;
+  animation-duration: 3.5s;
+}
+
+.bar10 {
+  left: 90%;
+  animation-duration: 4.3s;
+}
+
