@@ -1,5 +1,8 @@
 # Drum Machine
 
-Become a real (front-end) musician!  Demo here.
+Become a real (front-end) musician!  Demo [here](https://codepen.io/minobino/pen/MMGXmJ).
 
-https://raw.githubusercontent.com/hanamin/FCC-Projects/master/Front%20End%20Libraries/Drum%20Machine/images/pixel.png
+
+![drum](https://raw.githubusercontent.com/hanamin/FCC-Projects/master/Front%20End%20Libraries/Drum%20Machine/images/pixel.png)
+
+
