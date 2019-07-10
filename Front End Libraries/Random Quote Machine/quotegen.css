@@ -1,5 +1,5 @@
-/*quote box*/
-#quotearea {
+/*box stylin*/
+#quote-box {
   width:45%;
   padding: 8px;
   margin:0 auto;
@@ -7,57 +7,29 @@
   text-align: center;
   border-radius: 2px;
   border: 1px solid white;
-  font-family: "Press Start 2P";
+  font-family: "Press Start 2P","Candara";
   box-shadow: 0 1px 0 1px black, inset 0 1px 0 1px black, 0 0 0 1px black, inset 0 0 0 1px black;
-}
-
-/*new quote button*/
-#getquote {
-  color:white;
-  text-align:center;
-  border:solid #00cc66;
-  border-radius:3px;
-  background-color:#00cc66;
-  font-family:'Press Start 2P';
-  margin:5px 0 5px 0;
-}
-
-#getquote:hover{
-  border:solid #00b359;
-  background-color:#00b359;
 }
 
 /*me*/
 #info{
   color:white;
-  width:50%;
-  margin:auto;
-  padding:5px 0 0 0;
+  padding:7px;
   text-align:center;
-  font-family:"Press Start 2P";
-  font-size:14px;
-}
-
-.twitter-share-button{
-  font-family:'Press Start 2P';
-  text-align:center;
+  font:14px "Press Start 2P","Candara";
 }
 
 /*everything else*/
-
-a{
+#info a{
   color:inherit;
 }
 
-a:hover{
+#info a:hover{
   text-decoration:none;
 }
 
 body {
-  background-color:#D35435;
-  background-image:url('images/ashwalk.gif');
-  background-size:400px;
-  background-repeat:no-repeat;
+  background:#D35435 url('https://image.ibb.co/hTtZKv/ashwalk.gif') 400px no-repeat;
   background-position:center;
   margin:400px 0 -50px 0;
 }
