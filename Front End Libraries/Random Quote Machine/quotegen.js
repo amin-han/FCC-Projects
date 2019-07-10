@@ -1,32 +1,39 @@
 //quotes API
 var forismaticAPI = 'https://api.forismatic.com/api/1.0/?method=getQuote&format=jsonp&lang=en&jsonp=?';
+
 $(document).ready(function() {
-  
-    $('#getquote').on("click", function() {
+  $.getJSON(forismaticAPI, function(data) {
+    //on load
+            $('#text').append('<blockquote>' + data.quoteText + '</blockquote>');
+            $('#author').append('<blockquote>' + data.quoteAuthor + '</blockquote>');   
+        });
+  //on click
+    $('#new-quote').on("click", function() {
         $.getJSON(forismaticAPI, function(data) {
-            $('#quotearea').empty();
-            $('#quotearea').append('<blockquote>' + data.quoteText + '</blockquote>' + '<p id="author"> —  ' + data.quoteAuthor + '</p>');
-            $('#quotearea').show();
+            $('#text').empty();
+            $('#author').empty();
+            $('#text').append('<blockquote>' + data.quoteText + '</blockquote>');
+            $('#author').append('<blockquote>' + data.quoteAuthor + '</blockquote>');   
         });
     });
 });
 
 //tweet button
    function twitter() {
-        var tweet_quote = $('#quotearea').text();
+        var tweet_quote = $('#text').text();
         var tweet_author = $('#author').text();
         
-        var tweet = 'https://twitter.com/intent/tweet?text=' + encodeURIComponent(tweet_quote)
+        var tweet = 'https://twitter.com/intent/tweet?text=' + encodeURIComponent(tweet_quote) + ' - ' + encodeURIComponent(tweet_author);
         
-        window.open(tweet, '_blank');    
+         window.open(tweet, '_blank');   
     }
 
- $('.twitter-share-button').on('click', function(){
+ $('#tweet-quote').on('click', function(){
         twitter();
     });
 
 //random color
-var myColors = ['red', 'purple', '#E84751', 'blue', 'orange', '#323643'];
+var myColors = ['#ff3333', '#6600cc', '#E84751', '#0039e6', '#e62e00', '#323643'];
                 
 function colorShift(){
   var randomize = Math.floor(Math.random()*myColors.length);
