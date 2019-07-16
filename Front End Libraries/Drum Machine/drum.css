@@ -9,7 +9,7 @@ body {
     z-index:0;
     width:500px;
     height:500px;
-    background:url("https://i.ibb.co/YX663TD/pixel.png");
+    background:url("images/pixel.png");
     display: flex;
     flex-direction: column;
     align-items: center;
