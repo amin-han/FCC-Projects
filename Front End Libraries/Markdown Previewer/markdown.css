@@ -1,1 +1,21 @@
+#editor{
+  width:50vw;
+  height:100vh;
+  padding:20px;
+  margin-right:30px;
+  resize:none;
+  color:white;
+  float:left;
+  font-family:"Consolas";
+  background-color:rgba(0, 0, 0, 0.7);
+}
+
+#preview{
+  color:white;
+}
+
+body{
+  background:black url('https://image.ibb.co/bGkzgU/bg.png') no-repeat;
+  background-size:cover;
+}
 
