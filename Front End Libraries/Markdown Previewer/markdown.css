@@ -1,4 +1,6 @@
-#editor{
+
+
+ #editor{
   width:50vw;
   height:100vh;
   padding:20px;
@@ -13,6 +15,11 @@
 #preview{
   color:white;
 }
+
+a:visited{
+  color:inherit;
+}
+
 
 body{
   background:black url('https://image.ibb.co/bGkzgU/bg.png') no-repeat;
