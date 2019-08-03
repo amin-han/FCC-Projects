@@ -1,3 +1,4 @@
+/*uses Babel compiler, please see how to set it up for your use case!  https://babeljs.io/setup#installation */
 
 class App extends React.Component {
   constructor(props) {
