@@ -1,35 +1,30 @@
 /*calculator styling*/
-
 .calculator {
-  margin:auto;
-  margin-top:10%;
   width:300px;
   height:400px;
-  background-color:#ffe680;
-  background-image:url("images/pikawave.png");
-  background-repeat:no-repeat;
-  background-position:right bottom;
-  border:3px solid #b3b300;
+  margin:100px auto;
   border-radius:25px;
-  box-shadow:0 5px 5px 5px darkgray;
+  border:3px solid #b3b300;
+  box-shadow:0 5px 5px 5px #bfbfbf;
+  background:#ffe680 url("images/pikawave.png") no-repeat right bottom;
 }
 
 .screen {
-  margin:auto;
-  margin-top:20px;
   width:260px;
   height:100px;
-  background-color:#c3c2ab;
-  border:3px solid #b4b39d;
+  background:#c3c2ab;
   border-radius:20px;
-  box-shadow:-2px -2px 0 0 gray;
+  margin:15px 0 0 18px;
+  border:3px solid #b4b39d;
   font-family:"Press Start 2P";
+  box-shadow:-2px -2px 0 0 gray;
+  
 }
 
-#logdisplay{
+#logdisplay {
   float:left;
+  color:#fff;
   font-size:13px;
-  color:white;
   margin-bottom:-25px;
 }
 
@@ -39,100 +34,86 @@
 }
 
 /*dpad styling*/
-
 .dpad {
   float:left;
-  margin:10px 0 0 10px;
+  outline:none;
   width: 110px;
   height: 100px;
   position:relative;
-  
-  
+  margin:10px 0 0 10px;
 }
 
 #d-up {
+  float:left;
   width:35px;
   height:35px;
-  margin:auto;
-  margin:10px 0 0 0;
-  border:1px solid #0000cc;
-  float:left;
-  font-size:15px;
-  font-family:"Press Start 2P";
   color:#0000cc;
+  margin:10px 0 0 0;
   box-shadow:0 3px 0 0;
+  border:1px solid #0000cc;
+  font:15px "Press Start 2P";
   border-radius:5px 5px 5px 5px;
   background:rgba(102, 163, 255, 0.7);
-  outline:none;
 }
 
-#d-up:active{
-  transform: translate(0px, 3px);
+#d-up:active {
   box-shadow: none;
+  transform: translate(0px, 3px);
 }
 
 #d-left {
   float:left;
   width:35px;
   height:35px;
-  margin-top:45px;
-  border:1px solid #0000cc;
-  box-shadow:0 3px 0 0;
-  font-size:15px;
-  font-family:"Press Start 2P";
   color:#0000cc;
+  margin-top:45px;
+  box-shadow:0 3px 0 0;
+  border:1px solid #0000cc;
+  font:15px "Press Start 2P";
   border-radius:5px 5px 5px 5px;
   background:rgba(102, 163, 255, 0.7);
-  outline:none;
 }
 
-#d-left:active{
-  transform: translate(0px, 3px);
-  box-shadow: none;  
+#d-left:active {
+  box-shadow: none;
+  transform: translate(0px, 3px); 
 }
 
 
 #d-down {
-  margin-left:35px;
   width:35px;
   height:35px;
-  border:1px solid #0000cc;
-  color:#0000cc;
-  font-size:15px;
-  font-family:"Press Start 2P";
+  margin:0 0 0 35px;
   box-shadow:0 3px 0 0;
+  border:1px solid #0000cc;
+  font:15px "Press Start 2P";
   border-radius:5px 5px 5px 5px;
   background:rgba(102, 163, 255, 0.7);
-  outline:none;
-  
 }
 
-#d-down:active{
-  transform: translate(0px, 3px);
+#d-down:active {
   box-shadow: none;
+  transform: translate(0px, 3px);
 }
 
 #d-right {
   width:35px;
   height:35px;
-  border:1px solid #0000cc;
-  margin-left:35px;
   color:#0000cc;
-  font-size:15px;
-  font-family:"Press Start 2P";
+  margin:0 0 0 35px;
   box-shadow:0 3px 0 0;
+  border:1px solid #0000cc;
+  font:15px "Press Start 2P";
   border-radius:5px 5px 5px 5px;
   background:rgba(102, 163, 255, 0.7);
-  outline:none;
 }
 
 #d-right:active {
-  transform: translate(0px, 3px);
   box-shadow: none;
+  transform: translate(0px, 3px);
 }
 
 /*circle button styling*/
-
 .circlebuttons {
  width:40%;
  float:right;
@@ -141,42 +122,40 @@
 }
 
 #redbutton {
-  background:rgba(255, 122, 77, 0.5);
-  border:1px solid darkred;
-  color:darkred;
-  float:right;
   width:50px;
   height:50px;
+  float:right;
+  outline:none;
+  color:#990000;
   border-radius:50%;
   box-shadow:0 3px 0 0;
-  font-size:15px;
-  font-family:"Press Start 2P";
-  outline:none;
+  border:1px solid #990000;
+  font:15px "Press Start 2P";
+  background:rgba(255, 122, 77, 0.5);
 }
 
-#redbutton:active{
-  transform: translate(0px, 3px);
+#redbutton:active {
   box-shadow: none;
+  transform: translate(0px, 3px);
 }
 
 #greenbutton {
-  background:rgba(102, 255, 51, 0.5);
-  margin-top:20px;
-  border:1px solid darkgreen;
-  color:darkgreen;
   float:left;
   width:50px;
   height:50px;
-  border-radius:50%;
-  box-shadow:0 3px 0 0;
-  font-size:15px;
-  font-family:"Press Start 2P";
   outline:none;
+  color:#006600;
+  border-radius:50%;
+  margin:20px 0 0 0;
+  box-shadow:0 3px 0 0;
+  border:1px solid #006600;
+  font:15px "Press Start 2P";
+  background:rgba(102, 255, 51, 0.5);
 }
 
-#greenbutton:active{
-  transform: translate(0px, 3px);
+#greenbutton:active {
   box-shadow: none;
+  transform: translate(0px, 3px);
 }
 
 /*number key styling*/
@@ -190,67 +169,64 @@
 .singlekey {
   width:35px;
   height:35px;
-  margin:0 0 3px 0;
-  border:1px solid green;
-  background:rgba(0, 204, 0, 0.8);
-  box-shadow:0 2px 0 0 green;
-  font-size:15px;
-  font-family:"Press Start 2P";
-  color:white;
-  border-radius:5px 5px 5px 5px;
+  color:#fff;
   outline:none;
+  margin:0 0 3px 0;
+  border:1px solid #155115;
+  font:15px "Press Start 2P";
+  box-shadow:0 2px 0 0 #155115;
+  border-radius:5px 5px 5px 5px;
+  background:rgba(0, 204, 0, 0.8);
 }
 
-.singlekey:active{
-  transform: translate(0px, 3px);
+.singlekey:active {
   box-shadow: none;
+  transform: translate(0px, 3px);
 }
 
 /*miscellaneous buttons*/
-
 .startselect {
-  float:left;
   width:20%;
+  float:left;
   margin:150px 0 0 -100px;
 
 }
 
-.startselectbutton{
- height:22px;
+.startselectbutton {
+ color:#fff;
  width:50px;
+ height:22px;
+ outline:none;
  margin:0 0 10px 0;
  border-radius:9px;
  background:#666666;
  border:2px solid #404040;
- color:white;
- font-family:"Press Start 2P";
- font-size:15px;
- box-shadow:0 2px 0 0 black;
- outline:none;
+ box-shadow:0 2px 0 0 #000;
+ font:15px "Press Start 2P";
 }
 
-.startselectbutton:active{
+.startselectbutton:active {
+  box-shadow: none;
   transform: translate(0px, 3px);
-  box-shadow: none;
 }
 
-.equals{
-  height:50px;
-  width:50px;
+.equals {
   float:left;
-  border:2px solid darkred;
-  border-radius:7px;
-  margin:215px 0 0 -100px;
-  color:white;
-  background:#ff704d;
-  box-shadow: 0 2px 0 darkred;
-  font-family:"Press Start 2P";
+  color:#fff;
+  width:50px;
+  height:50px;
   outline:none;
+  border-radius:7px;
+  background:#ff704d;
+  font:16px "Press Start 2P";
+  margin:215px 0 0 -100px;
+  border:2px solid #990000;
+  box-shadow: 0 2px 0 #990000;
 }
 
-.equals:active{
-   transform: translate(0px, 3px);
+.equals:active {
   box-shadow: none;
+  transform: translate(0px, 3px);
 }
 
 
