@@ -6,7 +6,7 @@
   border-radius:25px;
   border:3px solid #b3b300;
   box-shadow:0 5px 5px 5px #bfbfbf;
-  background:#ffe680 url("images/pikawave.png") no-repeat right bottom;
+  background:#ffe680 url("https://image.ibb.co/huawcQ/pikawave.png") no-repeat right bottom;
 }
 
 .screen {
@@ -21,14 +21,14 @@
   
 }
 
-#logdisplay {
+#inputs {
   float:left;
   color:#fff;
   font-size:13px;
   margin-bottom:-25px;
 }
 
-#answerdisplay {
+#display {
   float:right;
   font-size:25px;
 }
@@ -43,7 +43,7 @@
   margin:10px 0 0 10px;
 }
 
-#d-up {
+.d-up {
   float:left;
   width:35px;
   height:35px;
@@ -56,12 +56,12 @@
   background:rgba(102, 163, 255, 0.7);
 }
 
-#d-up:active {
+.d-up:active {
   box-shadow: none;
   transform: translate(0px, 3px);
 }
 
-#d-left {
+.d-left {
   float:left;
   width:35px;
   height:35px;
@@ -74,13 +74,13 @@
   background:rgba(102, 163, 255, 0.7);
 }
 
-#d-left:active {
+.d-left:active {
   box-shadow: none;
   transform: translate(0px, 3px); 
 }
 
 
-#d-down {
+.d-down {
   width:35px;
   height:35px;
   margin:0 0 0 35px;
@@ -91,12 +91,12 @@
   background:rgba(102, 163, 255, 0.7);
 }
 
-#d-down:active {
+.d-down:active {
   box-shadow: none;
   transform: translate(0px, 3px);
 }
 
-#d-right {
+.d-right {
   width:35px;
   height:35px;
   color:#0000cc;
@@ -108,7 +108,7 @@
   background:rgba(102, 163, 255, 0.7);
 }
 
-#d-right:active {
+.d-right:active {
   box-shadow: none;
   transform: translate(0px, 3px);
 }
@@ -121,7 +121,7 @@
 
 }
 
-#redbutton {
+.redbutton {
   width:50px;
   height:50px;
   float:right;
@@ -134,12 +134,12 @@
   background:rgba(255, 122, 77, 0.5);
 }
 
-#redbutton:active {
+.redbutton:active {
   box-shadow: none;
   transform: translate(0px, 3px);
 }
 
-#greenbutton {
+.greenbutton {
   float:left;
   width:50px;
   height:50px;
@@ -153,7 +153,7 @@
   background:rgba(102, 255, 51, 0.5);
 }
 
-#greenbutton:active {
+.greenbutton:active {
   box-shadow: none;
   transform: translate(0px, 3px);
 }
@@ -163,13 +163,13 @@
 .keys {
   width:40%;
   float:right;
-  margin:60px 5px 0 0;
+  margin:60px 0 0 0;
 }
 
 .singlekey {
+  color:#fff;
   width:35px;
   height:35px;
-  color:#fff;
   outline:none;
   margin:0 0 3px 0;
   border:1px solid #155115;
@@ -218,10 +218,11 @@
   outline:none;
   border-radius:7px;
   background:#ff704d;
-  font:16px "Press Start 2P";
   margin:215px 0 0 -100px;
   border:2px solid #990000;
+  font:16px "Press Start 2P";
   box-shadow: 0 2px 0 #990000;
+  
 }
 
 .equals:active {
