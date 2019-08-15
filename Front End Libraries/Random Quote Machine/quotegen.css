@@ -1,35 +1,39 @@
-/*box stylin*/
+/*box styling*/
 #quote-box {
   width:45%;
-  padding: 8px;
+  padding:8px;
   margin:0 auto;
-  background: white;
-  text-align: center;
-  border-radius: 2px;
-  border: 1px solid white;
-  font-family: "Press Start 2P","Candara";
-  box-shadow: 0 1px 0 1px black, inset 0 1px 0 1px black, 0 0 0 1px black, inset 0 0 0 1px black;
+  background:white;
+  text-align:center;
+  border-radius:2px;
+  border:1px solid white;
+  font-family:"Press Start 2P";
+  box-shadow:0 1px 0 1px black, inset 0 1px 0 1px black, 0 0 0 1px black, inset 0 0 0 1px black;
 }
 
 /*me*/
-#info{
+#info {
   color:white;
   padding:7px;
   text-align:center;
-  font:14px "Press Start 2P","Candara";
+  font:14px "Press Start 2P";
 }
 
 /*everything else*/
-#info a{
+#info a {
   color:inherit;
 }
 
-#info a:hover{
+#info a:hover {
   text-decoration:none;
 }
 
+img {
+  display:block;
+  margin:0 auto;
+  padding:250px 0 50px 0;
+}
+
 body {
-  background:#D35435 url('images/ashwalk.gif') 400px no-repeat;
-  background-position:center;
-  margin:400px 0 -50px 0;
+  background:#D35435;
 }
