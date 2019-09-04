@@ -1,106 +1,88 @@
-$(document).ready(function(){
-  
-  var minutes = 25;
-  var seconds = 0;
-  var status = "asleep";
-  var paused = false;
-  var counting;
-  
-  $(".countdown").html(minutes + ":00");
-  
-  //increase time
-  
-  $("#up-arrow").click(function(){
-    minutes++;
-    if(minutes > 99){
-      $("h5").html("That's too long!");
-      minutes = 99;
-    } else
-        $(".countdown").html(minutes + ":00");
-  });
-  
-  //decrease time
-  $("#down-arrow").click(function(){
-      minutes--;
-    if(minutes < 1){
-      $("h5").html("Way too low!");
-      minutes = 1;
-    } else 
-       $(".countdown").html(minutes + ":00");
-  });
-   
-  //countdown logic
-  function countdown(){
-      if(seconds === 0){seconds = 60; minutes--}
-      seconds--;
-    //finished the countdown
-      if(minutes === 0 && seconds === 0){
-        clearInterval(counting);
-        $("#start").attr('src', 'images/pikadone.gif');
-        $("header").html("You did it!!");
-        $("h5").html("Click reset to begin again!");
-        status = "finished";
-      }
-      if(seconds < 10){$('.countdown').html(minutes + ":0" + seconds);}
-      else{
-      $('.countdown').html(minutes + ":" + seconds);
-      }
-    } 
-  
-  //starting/stopping the countdown
-  function timer(){
-    if(paused === false){
-     counting = setInterval(countdown, 1000);
-     paused = true;
-   }
-   else if(paused === true){
-     clearInterval(counting);
-     paused = false;
-   }
-  }
-  
-  //what happens when you click Pikachu
-  $("#start").click(function(){
-    if(status === "asleep"){
-    $("#start").attr('src', 'images/pikawake.gif');
-     $("header").html("He's awake!!");
-     $("h5").html("Click again to begin!");
-      status = "awake";
-      
-    } else if(status === "awake"){
-      $("#start").attr('src', 'images/pikatwitch.gif');
-      $("header").html("Time for work!");
-      $("h5").html("Click at any time to pause.");
-      $("#up-arrow").hide();
-      $("#down-arrow").hide();
-      $(".countdown").css("animation", "none");
-      status = "timing";
-      timer();
+//initial variables
+let countdown = 0;
+let seconds = 1500; 
+let workTime = 25;
+let breakTime = 5;
+let isBreak = true;
+let isPaused = true;
 
-    } else if(status === "timing") {
-      $("#start").attr('src', 'images/pikahuh.gif');
-      $("header").html("Procrastinating?");
-      $("h5").html("Let's go, click to resume!");
-      status = "awake";
-      timer();
-      
-    } 
-    
-  });
-  //reset button
- $(".reset").click(function(){
-   minutes = 25;
-   seconds = 0;
-   paused = false;
-   clearInterval(counting);
-   $("#start").attr('src', 'images/pikasleep.gif');
-   $("header").html("Pomodoro Clock");
-   $("h5").html("Wake Pikachu up!");
-   $(".countdown").html(minutes + ":00");
-   $("#up-arrow").show();
-   $("#down-arrow").show();
-   status = "asleep";
- })
-  
-  
-});
+const timerLabel = document.querySelector("#timer-label");
+const timeLeft = document.querySelector("#time-left");
+const startStop = document.querySelector("#start_stop");
+const resetAll = document.querySelector("#reset");
+const workMin = document.querySelector("#work-min");
+const breakMin = document.querySelector("#break-min");
+
+//sound effect when time's up
+const timeUp = document.createElement('audio');
+timeUp.setAttribute("src", "https://www.soundjay.com/misc/sounds/bell-ringing-05.mp3");
+
+
+//event listeners
+startStop.addEventListener('click', () => {
+  clearInterval(countdown);
+  isPaused = !isPaused;
+  if (!isPaused) {
+    countdown = setInterval(timer, 1000);
+  }
+})
+
+resetAll.addEventListener('click', () => {
+  clearInterval(countdown);
+  seconds = workTime * 60;
+  countdown = 0;
+  isPaused = true;
+  isBreak = true;
+})
+
+//countdown magic happens here
+function timer() {
+  seconds --;
+  if (seconds < 0) {
+    clearInterval(countdown);
+    timeUp.currentTime = 0;
+    timeUp.play();
+    seconds = (isBreak ? breakTime : workTime) * 60;
+    isBreak = !isBreak;
+    countdown = setInterval(timer, 1000);
+  }
+}
+
+//changing work/break times
+let changeBy = 5;
+
+let upDownFunctions =
+    {"#session-increment": function () { workTime = Math.min(workTime + changeBy, 60)},
+     "#session-decrement": function () { workTime = Math.max(workTime - changeBy, 5)},
+     "#break-increment": function () { breakTime = Math.min(breakTime + changeBy, 60)},
+     "#break-decrement": function () { breakTime = Math.max(breakTime - changeBy, 5)}};
+
+for (var key in upDownFunctions) {
+    if (upDownFunctions.hasOwnProperty(key)) {
+      document.querySelector(key).onclick = upDownFunctions[key];
+    }
+}
+
+//updating the HTML
+function countdownDisplay() {
+  let minutes = Math.floor(seconds / 60);
+  let remainderSeconds = seconds % 60;
+  timeLeft.textContent = `${minutes}:${remainderSeconds < 10 ? '0' : ''}${remainderSeconds}`;
+}
+
+//control image based on whether timer is paused or not
+function pikachu(){
+  isPaused ? startStop.src="https://image.ibb.co/mxy1zv/pikasleep.gif" : startStop.src="https://image.ibb.co/ktw8MG/pikatwitch.gif";
+}
+
+function updateHTML() {
+  countdownDisplay();
+  isBreak ? timerLabel.textContent = "Time for work!" : timerLabel.textContent = "It's break time, baby!";
+  workMin.textContent = workTime;
+  breakMin.textContent = breakTime;  
+}
+
+window.setInterval(updateHTML, 100);
+
+startStop.addEventListener("click", updateHTML);
+startStop.addEventListener("click", pikachu);
