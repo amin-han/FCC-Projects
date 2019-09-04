@@ -1,86 +1,109 @@
-header {
-  text-align:center;
-  font-size:30px;
-  font-family:"Press Start 2P";
-  margin-top:10px;
-}
-
-h5 {
-  text-align:center;
-  font-family:"Press Start 2P";
-  color:darkred;
-}
-
-.pikachu {
-  text-align:center;
-  position:relative;
-}
-
-/*reset button*/
-.reset{
-  cursor:pointer;
-  font-family:"Press Start 2P";
+.container {
+  width:100%;
   margin:0 auto;
-  display:block;
-  outline:0 !important;
-  background: transparent;
-  border: none !important;
-  -webkit-animation: rainbow 1s infinite; 
-  -ms-animation: rainbow 1s infinite;
-  animation: rainbow 1s infinite; 
+  display:table;
+  max-width:800px;
+  text-align:center;
 }
 
-/*cross-browser rainbow effect*/
-@-webkit-keyframes rainbow{
-	20%{color: red;}
-	40%{color: yellow;}
-	60%{color: green;}
-	80%{color: blue;}
-	100%{color: orange;}	
+header {
+  padding:10px 0 0 0;
+  font:30px "Press Start 2P";
 }
 
-@-ms-keyframes rainbow{
-	20%{color: red;}
-	40%{color: yellow;}
-	60%{color: green;}
-	80%{color: blue;}
-	100%{color: orange;}	
-}
-
-@keyframes rainbow{
-	20%{color: red;}
-	40%{color: yellow;}
-	60%{color: green;}
-	80%{color: blue;}
-	100%{color: orange;}	
-}
-
-/*timer*/
-.countdown {
+#timer-label {
+  color:#D35435;
   text-align:center;
   font-family:"Press Start 2P";
-  font-size:70px;
-  animation: blinker 1s linear infinite;
-  margin-top:-10px;
-  position:relative;
-}
-/*blinking animation*/
-@keyframes blinker {  
-  50% { opacity: 0; }
 }
 
-/*arrows*/
-
-.arrows{
-  text-align:center;
+#start_stop {
   cursor:pointer;
-  margin:-20px 0 20px 0;
 }
 
-#up-arrow:active{
-  transform: translate(0px, 3px);
+#time-left {
+  font:70px "Press Start 2P";
+  animation:blinker 1s linear infinite;
+  -ms-animation:blinker 1s linear infinite;
+  -webkit-animation:blinker 1s linear infinite;
 }
 
-#down-arrow:active{
-  transform: translate(0px, 3px);
+.arrows {
+  cursor:pointer;
+  decoration:none;
+  font:20px "Press Start 2P";
+}
+
+.arrows:active {
+  transform:translate(0px, 3px);
+}
+
+.controls {
+  margin:auto;
+  width:50%;
+  font-family:"Press Start 2P";
+}
+
+#work {
+  float:left;
+}
+
+#break {
+  float:right;
+}
+
+.arrows {
+  color:#000;
+  font-size:30px;
+  outline:0 !important;
+  border:none !important;
+  background:transparent;
+}
+
+#reset {
+  outline:0 !important;
+  border:none !important;
+  background:transparent;
+  transform: translate(0%, 50%);
+  font-family:"Press Start 2P";
+  animation:rainbow 1s infinite; 
+  -ms-animation:rainbow 1s infinite;
+  -webkit-animation:rainbow 1s infinite; 
+}
+
+/*animations*/
+@-webkit-keyframes rainbow {
+	20%{color:red;}
+	40%{color:yellow;}
+	60%{color:green;}
+	80%{color:blue;}
+	100%{color:orange;}	
+}
+
+@-ms-keyframes rainbow {
+	20%{color:red;}
+	40%{color:yellow;}
+	60%{color:green;}
+	80%{color:blue;}
+	100%{color:orange;}	
+}
+
+@keyframes rainbow {
+	20%{color:red;}
+	40%{color:yellow;}
+	60%{color:green;}
+	80%{color:blue;}
+	100%{color:orange;}	
+}
+
+@-ms-keyframes blinker {  
+  50% {opacity:0;}
+}
+
+@-webkit-keyframes blinker {  
+  50% {opacity:0;}
+}
+
+@keyframes blinker {  
+  50% {opacity:0;}
 }
